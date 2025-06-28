@@ -22,6 +22,7 @@ jobs:
           GIST_ID: ${{ secrets.GIST_ID }}
 
   workflow-keepalive:
+    if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
     permissions:
       actions: write
