@@ -20,3 +20,12 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           LFMUSERNAME: ${{ secrets.LFMUSERNAME }}
           GIST_ID: ${{ secrets.GIST_ID }}
+
+  keepalive-job:
+      name: Keepalive Workflow
+      runs-on: ubuntu-latest
+      permissions:
+        actions: write
+      steps:
+        - uses: actions/checkout@v4
+        - uses: gautamkrishnar/keepalive-workflow@v2
