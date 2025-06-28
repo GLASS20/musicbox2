@@ -83,7 +83,7 @@ async function main() {
       gist_id: gistID,
       files: {
         [filename]: {
-          filename: `🔊🎶 My last week in music (top tracks)`,
+          filename: `🎶 My last week in music`,
           content: lines.join("\n")
         }
       }
